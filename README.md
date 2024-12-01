@@ -1,6 +1,6 @@
 # Opai Client extensions open source components (WIP)
 
-**This project is still under development. all the code may NOT use the latest API.**
+**This project is still under development. all the code may NOT use in final API.**
 
 The public client components of the Opai project.
 
