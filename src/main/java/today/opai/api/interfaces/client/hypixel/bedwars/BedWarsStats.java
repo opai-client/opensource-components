@@ -1,4 +1,4 @@
-package today.opai.api.interfaces.client.hypixel;
+package today.opai.api.interfaces.client.hypixel.bedwars;
 
 import com.google.gson.annotations.SerializedName;
 import lombok.Data;

@@ -5,5 +5,6 @@ import today.opai.api.interfaces.game.network.NetPacket;
 
 public interface CPacket0BEntityAction extends NetPacket {
     EnumEntityAction getAction();
+
     void setAction(EnumEntityAction action);
 }

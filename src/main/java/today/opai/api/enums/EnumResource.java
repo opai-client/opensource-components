@@ -1,7 +1,8 @@
 package today.opai.api.enums;
 
-enum EnumResource {
+public enum EnumResource {
     IRON,
     GOLD,
-    EMERALDS
+    EMERALDS,
+    DIAMOND
 }

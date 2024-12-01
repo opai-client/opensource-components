@@ -6,5 +6,6 @@ import java.awt.*;
 
 public interface ColorValue extends Value<Color> {
     boolean isAlphaAllowed();
+
     ColorValue setAlphaAllowed(boolean value);
 }

@@ -1,29 +1,32 @@
 package today.opai.api.features;
 
+import lombok.Getter;
+import lombok.Setter;
 import today.opai.api.interfaces.Registerable;
 
-public abstract class ExtensionCommand implements Registerable {
-    private final String[] names;
-    private final String description;
-    private final String usage;
+@Getter
+@Setter
+public abstract class ExtensionWidget implements Registerable {
+    private final String name;
+    private float x;
+    private float y;
+    private float width;
+    private float height;
 
-    protected ExtensionCommand(String[] names, String description, String usage) {
-        this.names = names;
-        this.description = description;
-        this.usage = usage;
+    protected ExtensionWidget(String name) {
+        this.name = name;
     }
 
-    public abstract void onExecute(String[] params);
+    public abstract void render();
 
-    public String[] getNames() {
-        return names;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public String getUsage() {
-        return usage;
+    /**
+     * Determines whether the widget should be rendered.
+     * By default, it always returns {@code true}, meaning the widget will always be rendered.
+     * Override this method to provide custom rendering conditions.
+     *
+     * @return {@code true} if the widget should be rendered, {@code false} otherwise.
+     */
+    public boolean renderPredicate() {
+        return true;
     }
 }

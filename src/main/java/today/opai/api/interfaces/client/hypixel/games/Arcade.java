@@ -1,7 +1,10 @@
-package today.opai.api.interfaces.client.hypixel;
+package today.opai.api.interfaces.client.hypixel.games;
 
 import com.google.gson.annotations.SerializedName;
 import lombok.Data;
+import today.opai.api.interfaces.client.hypixel.arcade.Dropper;
+import today.opai.api.interfaces.client.hypixel.arcade.HideAndSeek;
+import today.opai.api.interfaces.client.hypixel.arcade.Zombies;
 
 @Data
 public class Arcade {

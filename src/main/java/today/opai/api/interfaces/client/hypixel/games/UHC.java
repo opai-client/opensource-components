@@ -1,4 +1,4 @@
-package today.opai.api.interfaces.client.hypixel;
+package today.opai.api.interfaces.client.hypixel.games;
 
 import lombok.Data;
 

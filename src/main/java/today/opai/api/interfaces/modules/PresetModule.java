@@ -8,6 +8,7 @@ public interface PresetModule {
     boolean isEnabled();
 
     String getName();
+
     String getDescription();
 
     int getKey();

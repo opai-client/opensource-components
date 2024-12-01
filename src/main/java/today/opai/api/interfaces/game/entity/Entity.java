@@ -10,26 +10,48 @@ import java.util.UUID;
 
 public interface Entity {
     Vector3d getMotion();
+
     void setMotion(Vec3Data motion);
+
     PositionData getPosition();
+
     PositionData getLastTickPosition();
+
     void setPosition(PositionData position);
+
     RotationData getRotation();
+
     void setRotation(RotationData rotation);
+
     float getFallDistance();
+
     void setFallDistance(float distance);
+
     boolean isOnGround();
+
     void setOnGround(boolean onGround);
+
     boolean isMoving();
+
     boolean isCollidedHorizontally();
+
     boolean isCollidedVertically();
+
     int getTicksExisted();
+
     String getName();
+
     String getDisplayName();
+
     boolean isInvisible();
+
+    boolean inRange(double range);
+
     double getDistanceToPosition(PositionData position);
 
     UUID getUUID();
 
     EnumDirection getDirection();
+
+    int getEntityId();
 }

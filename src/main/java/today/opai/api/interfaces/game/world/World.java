@@ -8,12 +8,30 @@ import java.util.List;
 
 public interface World {
     Entity getEntityByID(int id);
+
     List<Entity> getLoadedEntities();
+
     List<Player> getLoadedPlayerEntities();
+
     void removeEntity(Entity entity);
+
     int getBlock(BlockPosition position);
+
     boolean isLiquid(BlockPosition position);
+
     boolean isSolid(BlockPosition position);
+
     boolean isOpaque(BlockPosition position);
+
     boolean isTranslucent(BlockPosition position);
+
+    boolean isSingleplayer();
+
+    String getScreenTitle();
+
+    String getScoreboardTitle();
+
+    List<String> getScoreboardNames();
+
+    List<String> getScoreboardLines();
 }

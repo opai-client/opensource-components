@@ -1,4 +1,4 @@
 package today.opai.api.events;
 
-public class EventSlowdown extends EventCancelable{
+public class EventSlowdown extends EventCancelable {
 }

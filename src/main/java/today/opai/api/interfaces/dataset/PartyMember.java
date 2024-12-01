@@ -6,7 +6,10 @@ import java.util.UUID;
 
 public interface PartyMember {
     String getName();
+
     String getClientUsername();
+
     UUID getUUID();
+
     EnumPartyPermission getPermission();
 }

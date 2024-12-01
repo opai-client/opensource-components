@@ -7,6 +7,8 @@ import today.opai.api.interfaces.game.network.NetPacket;
 
 public interface CPacket07Digging extends NetPacket {
     Vector3i getPosition();
+
     EnumDiggingAction getAction();
+
     EnumDirection getDirection();
 }

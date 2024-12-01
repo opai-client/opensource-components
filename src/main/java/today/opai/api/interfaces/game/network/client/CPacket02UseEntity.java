@@ -6,6 +6,8 @@ import today.opai.api.interfaces.game.network.NetPacket;
 
 public interface CPacket02UseEntity extends NetPacket {
     EnumUseEntityAction getAction();
+
     int getEntityId();
+
     Vector3d getHitVec();
 }

@@ -1,7 +1,8 @@
-package today.opai.api.interfaces.client.hypixel;
+package today.opai.api.interfaces.client.hypixel.games;
 
 import com.google.gson.annotations.SerializedName;
 import lombok.Data;
+import today.opai.api.interfaces.client.hypixel.bedwars.BedWarsStats;
 
 @Data
 public class Bedwars {

@@ -1,6 +1,6 @@
 package today.opai.api.events;
 
-public class EventChatReceived {
+public class EventChatReceived extends EventCancelable {
     private final String message;
 
     public EventChatReceived(String message) {

@@ -1,4 +1,4 @@
 package today.opai.api.events;
 
-public class EventJump extends EventCancelable{
+public class EventJump extends EventCancelable {
 }

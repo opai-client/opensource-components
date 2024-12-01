@@ -1,6 +1,6 @@
 package today.opai.api.enums;
 
-public enum EnumBedWarsShopItem {
+public enum EnumShopItem {
     WOOL, CLAY, GLASS, END_STONE, LADDER, WOOD, OBSIDIAN,
     STONE_SWORD, IRON_SWORD, DIAMOND_SWORD, KB_STICK,
     CHAINMAIL_ARMOR, IRON_ARMOR, DIAMOND_ARMOR,
