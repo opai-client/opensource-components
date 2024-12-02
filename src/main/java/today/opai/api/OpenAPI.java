@@ -1,7 +1,9 @@
 package today.opai.api;
 
 import today.opai.api.enums.EnumNotificationType;
-import today.opai.api.features.*;
+import today.opai.api.features.ExtensionCommand;
+import today.opai.api.features.ExtensionModule;
+import today.opai.api.features.ExtensionWidget;
 import today.opai.api.interfaces.EventHandler;
 import today.opai.api.interfaces.Registerable;
 import today.opai.api.interfaces.client.HypixelAPI;
@@ -73,17 +75,49 @@ public interface OpenAPI {
 
     /**
      * Pops a notification to the user.
-     * 
-     * @param type the type of notification
-     * @param title the title of the notification
-     * @param message the message of the notification
+     *
+     * @param type      the type of notification
+     * @param title     the title of the notification
+     * @param message   the message of the notification
      * @param shownTime the duration the notification is shown (MS)
      */
     void popNotification(EnumNotificationType type, String title, String message, long shownTime);
 
     /**
+     * @param ign in game name
+     * @return boolean
+     */
+    boolean isFriend(String ign);
+
+    /**
+     * @param ign in game name
+     * @return boolean
+     */
+    boolean isTarget(String ign);
+
+    /**
+     * @param ign in game name
+     */
+    void addFriend(String ign);
+
+    /**
+     * @param ign in game name
+     */
+    void addTarget(String ign);
+
+    /**
+     * @param ign in game name
+     */
+    void removeFriend(String ign);
+
+    /**
+     * @param ign in game name
+     */
+    void removeTarget(String ign);
+
+    /**
      * Retrieves the username of the client.
-     * 
+     *
      * @return the client username
      */
     String getClientUsername();
