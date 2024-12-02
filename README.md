@@ -1,4 +1,4 @@
-# Opai Client extensions open source components (WIP)
+# Opai Client extensions open source components
 
 The public client components of the Opai project. Allow you to make your own extensions.
 
