@@ -1,7 +1,7 @@
 package today.opai.api.interfaces.game.entity;
 
-import today.opai.api.enums.EnumShopItem;
 import today.opai.api.enums.EnumResource;
+import today.opai.api.enums.EnumShopItem;
 import today.opai.api.interfaces.dataset.Vector3d;
 import today.opai.api.interfaces.game.Inventory;
 
@@ -23,8 +23,10 @@ public interface LocalPlayer extends Player {
     void rightClickMouse();
     void useItem();
     Vector3d getViewPosition();
-    double getBaseMoveSpeed();
 
+    float getPlayerViewY();
+
+    double getBaseMoveSpeed();
     /**
      * Checks if the local player is on the Bed Wars shop screen.
      *
