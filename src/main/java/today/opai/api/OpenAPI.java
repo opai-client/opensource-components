@@ -16,6 +16,7 @@ import today.opai.api.interfaces.managers.ModuleManager;
 import today.opai.api.interfaces.managers.RotationManager;
 import today.opai.api.interfaces.managers.ValueManager;
 import today.opai.api.interfaces.render.FontUtil;
+import today.opai.api.interfaces.render.GLStateManager;
 import today.opai.api.interfaces.render.RenderUtil;
 import today.opai.api.interfaces.render.ShaderUtil;
 
@@ -208,15 +209,17 @@ public interface OpenAPI {
 
     /**
      * Retrieves the shader utility.
-     * 
+     *
      * @return the shader utility
      */
     ShaderUtil getShaderUtil();
 
     /**
      * Retrieves the font utility.
-     * 
+     *
      * @return the font utility
      */
     FontUtil getFontUtil();
+
+    GLStateManager getGLStateManager();
 }
