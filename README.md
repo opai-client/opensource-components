@@ -42,7 +42,7 @@ Make your extension available for other players to download by publishing it on 
 
 You can use the following maven dependencies directly, no need to export to the final jar (included in the client)
 
-```pom
+```xml
 <dependency>
     <groupId>io.netty</groupId>
     <artifactId>netty-all</artifactId>
