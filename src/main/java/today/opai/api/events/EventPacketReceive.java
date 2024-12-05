@@ -1,15 +1,11 @@
 package today.opai.api.events;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
 import today.opai.api.interfaces.game.network.NetPacket;
 
+@AllArgsConstructor
+@Getter
 public class EventPacketReceive extends EventCancelable {
     private final NetPacket packet;
-
-    public EventPacketReceive(NetPacket packet) {
-        this.packet = packet;
-    }
-
-    public NetPacket getPacket() {
-        return packet;
-    }
 }

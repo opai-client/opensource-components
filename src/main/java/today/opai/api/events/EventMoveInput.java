@@ -2,9 +2,11 @@ package today.opai.api.events;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.Setter;
 
 @AllArgsConstructor
 @Getter
-public class EventChatReceived extends EventCancelable {
-    private final String message;
+@Setter
+public class EventMoveInput {
+    private float forward, strafe;
 }
