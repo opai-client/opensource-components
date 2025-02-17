@@ -2,6 +2,7 @@ package today.opai.api.interfaces.render;
 
 import today.opai.api.dataset.BlockPosition;
 import today.opai.api.features.ExtensionWidget;
+import today.opai.api.interfaces.dataset.Vector2f;
 import today.opai.api.interfaces.functions.WorldToScreenCallback;
 import today.opai.api.interfaces.game.entity.Entity;
 import today.opai.api.interfaces.game.entity.Player;
@@ -23,11 +24,15 @@ public interface RenderUtil {
 
     void worldToScreen(BlockPosition position, WorldToScreenCallback callback);
 
+    Vector2f worldToScreen(float x, float y, float z);
+
     void drawRect(float x, float y, float width, float height, Color color);
 
     void drawLine(float x1, float y1, float x2, float y2, float width, Color color);
 
     void drawRoundRect(float x, float y, float width, float height, int radius, Color color);
+
+    void drawShadow(float x, float y, float width, float height, float radius, Color color);
 
     void drawGradientRect(float x, float y, float width, float height, Color color, Color color2);
 
@@ -48,4 +53,8 @@ public interface RenderUtil {
     void readStencil();
 
     void endStencil();
+
+    boolean isFrameBufferWriting();
+
+    float getPartialTicks();
 }

@@ -5,6 +5,8 @@ public interface Player extends LivingEntity {
 
     boolean canFlying();
 
+    boolean isSneaking();
+
     void setItemInUseCount(int count);
 
     int getItemInUseCount();

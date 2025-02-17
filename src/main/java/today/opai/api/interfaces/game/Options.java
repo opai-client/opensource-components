@@ -87,4 +87,18 @@ public interface Options {
      * @return The timer speed.
      */
     float getTimerSpeed();
+
+    /**
+     * Sets the force Unicode font state.
+     *
+     * @param forceUnicodeFont The force Unicode font state to set.
+     */
+    void setForceUnicodeFont(boolean forceUnicodeFont);
+
+    /**
+     * Checks if the Unicode font is forced.
+     *
+     * @return {@code true} if the Unicode font is forced, {@code false} otherwise.
+     */
+    boolean isForceUnicodeFont();
 }
