@@ -7,6 +7,12 @@ public interface Player extends LivingEntity {
 
     boolean isSneaking();
 
+    void setSneaking(boolean sneaking);
+
+    boolean isSprinting();
+
+    void setSprinting(boolean sprinting);
+
     void setItemInUseCount(int count);
 
     int getItemInUseCount();

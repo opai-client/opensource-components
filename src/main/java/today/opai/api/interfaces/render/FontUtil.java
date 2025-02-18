@@ -11,7 +11,7 @@ public interface FontUtil {
      * @param size The size of the font.
      * @return A {@link Font} object created from the input stream.
      */
-    Font createFont(InputStream inputStream, int size);
+    Font createFont(InputStream inputStream, float size);
 
     /**
      * Creates a true type font (.ttf) from a byte array.
@@ -20,7 +20,7 @@ public interface FontUtil {
      * @param size The size of the font.
      * @return A {@link Font} object created from the byte array.
      */
-    Font createFont(byte[] data, int size);
+    Font createFont(byte[] data, float size);
 
     /**
      * Creates a true type font (.ttf) from a file.
@@ -29,7 +29,7 @@ public interface FontUtil {
      * @param size The size of the font.
      * @return A {@link Font} object created from the file.
      */
-    Font createFont(File fontFile, int size);
+    Font createFont(File fontFile, float size);
 
     Font getVanillaFont();
 
