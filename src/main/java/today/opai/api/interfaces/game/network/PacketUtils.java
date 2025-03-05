@@ -9,7 +9,7 @@ import today.opai.api.interfaces.dataset.Vector3i;
 import today.opai.api.interfaces.game.network.client.*;
 import today.opai.api.interfaces.game.item.ItemStack;
 
-public interface Packets {
+public interface PacketUtils {
     CPacket00KeepAlive createKeepAlive(int key);
 
     CPacket0ASwing createSwing();

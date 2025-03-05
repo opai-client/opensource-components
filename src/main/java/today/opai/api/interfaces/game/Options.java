@@ -101,4 +101,12 @@ public interface Options {
      * @return {@code true} if the Unicode font is forced, {@code false} otherwise.
      */
     boolean isForceUnicodeFont();
+
+    int getGuiScale();
+
+    void setGuiScale(int scale);
+
+    float getFovSetting();
+
+    void setFovSetting(float fovSetting);
 }
