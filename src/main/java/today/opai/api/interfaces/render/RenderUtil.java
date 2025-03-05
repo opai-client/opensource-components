@@ -48,6 +48,8 @@ public interface RenderUtil {
 
     void drawItem(ItemStack itemStack, float x, float y);
 
+    void drawItemNoCount(ItemStack itemStack, float x, float y);
+
     void drawStencil();
 
     void readStencil();

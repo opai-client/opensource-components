@@ -15,6 +15,9 @@ public interface World {
 
     void removeEntity(Entity entity);
 
+    Block getBlockFromPosition(BlockPosition position);
+
+    @Deprecated
     int getBlock(BlockPosition position);
 
     boolean isLiquid(BlockPosition position);

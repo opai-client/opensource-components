@@ -3,6 +3,7 @@ package today.opai.api;
 import today.opai.api.enums.EnumNotificationType;
 import today.opai.api.features.ExtensionCommand;
 import today.opai.api.features.ExtensionModule;
+import today.opai.api.features.ExtensionScreen;
 import today.opai.api.features.ExtensionWidget;
 import today.opai.api.interfaces.EventHandler;
 import today.opai.api.interfaces.Registerable;
@@ -10,6 +11,7 @@ import today.opai.api.interfaces.client.HypixelAPI;
 import today.opai.api.interfaces.client.IRC;
 import today.opai.api.interfaces.game.Options;
 import today.opai.api.interfaces.game.entity.LocalPlayer;
+import today.opai.api.interfaces.game.network.PacketUtils;
 import today.opai.api.interfaces.game.world.World;
 import today.opai.api.interfaces.managers.GameStateManager;
 import today.opai.api.interfaces.managers.ModuleManager;
@@ -74,6 +76,8 @@ public interface OpenAPI {
      */
     void printMessage(String message);
 
+    void displayScreen(ExtensionScreen extensionScreen);
+
     /**
      * Pops a notification to the user.
      *
@@ -122,7 +126,6 @@ public interface OpenAPI {
      * @return the client username
      */
     String getClientUsername();
-
     /**
      * Retrieves the version of the client.
      * 
@@ -222,4 +225,6 @@ public interface OpenAPI {
     FontUtil getFontUtil();
 
     GLStateManager getGLStateManager();
+
+    PacketUtils getPacketUtils();
 }

@@ -25,6 +25,9 @@ public interface EventHandler {
     default void onPlayerUpdate() {
     }
 
+    default void onMotionUpdate(){
+    }
+
     /**
      * Called on each loop iteration.
      */

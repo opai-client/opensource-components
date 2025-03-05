@@ -1,9 +1,11 @@
 package today.opai.api.interfaces.game.entity;
 
+import today.opai.api.dataset.RotationData;
 import today.opai.api.enums.EnumResource;
 import today.opai.api.enums.EnumShopItem;
 import today.opai.api.interfaces.dataset.Vector3d;
 import today.opai.api.interfaces.game.Inventory;
+import today.opai.api.interfaces.game.entity.raytrace.RaytraceResult;
 
 public interface LocalPlayer extends Player {
     Inventory getInventory();
@@ -49,4 +51,6 @@ public interface LocalPlayer extends Player {
      * @param item The shop item to purchase.
      */
     void purchase(EnumShopItem item);
+
+    RaytraceResult raytrace(RotationData rotation, double range, float expand, boolean allowThroughWalls);
 }

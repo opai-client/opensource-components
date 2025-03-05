@@ -16,6 +16,7 @@ import java.util.Objects;
 public class PositionData implements Vector3d {
 
     private double x, y, z;
+
     public PositionData(BlockPosition blockPos) {
         this.x = blockPos.getX();
         this.y = blockPos.getY();
