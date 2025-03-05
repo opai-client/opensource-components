@@ -22,7 +22,6 @@ public interface ShaderUtil {
      */
     void drawWithBlur(Runnable runnable);
 
-
     /**
      * WARNING: This method requires user enable "Bloom" option in HUD Settings
      *

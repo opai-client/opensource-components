@@ -121,6 +121,11 @@ public interface OpenAPI {
     void removeTarget(String ign);
 
     /**
+     * @return is world or player is null
+     */
+    boolean isNull();
+
+    /**
      * Retrieves the username of the client.
      *
      * @return the client username
@@ -226,5 +231,5 @@ public interface OpenAPI {
 
     GLStateManager getGLStateManager();
 
-    PacketUtil getPacketUtils();
+    PacketUtil getPacketUtil();
 }

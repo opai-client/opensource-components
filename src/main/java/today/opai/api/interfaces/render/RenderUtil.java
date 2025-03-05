@@ -1,6 +1,7 @@
 package today.opai.api.interfaces.render;
 
 import today.opai.api.dataset.BlockPosition;
+import today.opai.api.dataset.BoundingBox;
 import today.opai.api.features.ExtensionWidget;
 import today.opai.api.interfaces.dataset.Vector2f;
 import today.opai.api.interfaces.functions.WorldToScreenCallback;
@@ -23,6 +24,8 @@ public interface RenderUtil {
     void worldToScreen(Entity entity, WorldToScreenCallback callback);
 
     void worldToScreen(BlockPosition position, WorldToScreenCallback callback);
+
+    void worldToScreen(BoundingBox boundingBox, WorldToScreenCallback callback);
 
     Vector2f worldToScreen(float x, float y, float z);
 
@@ -59,4 +62,6 @@ public interface RenderUtil {
     boolean isFrameBufferWriting();
 
     float getPartialTicks();
+
+    void drawBoundingBox(BoundingBox boundingBox,Color color);
 }

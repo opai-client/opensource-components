@@ -1,5 +1,6 @@
 package today.opai.api.interfaces.game.entity;
 
+import today.opai.api.dataset.BoundingBox;
 import today.opai.api.dataset.PositionData;
 import today.opai.api.dataset.RotationData;
 import today.opai.api.dataset.Vec3Data;
@@ -54,4 +55,8 @@ public interface Entity {
     EnumDirection getDirection();
 
     int getEntityId();
+
+    BoundingBox getBoundingBox();
+
+    boolean equals(Entity entity);
 }

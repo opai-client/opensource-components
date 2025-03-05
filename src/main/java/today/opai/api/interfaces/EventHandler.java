@@ -25,7 +25,7 @@ public interface EventHandler {
     default void onPlayerUpdate() {
     }
 
-    default void onMotionUpdate(){
+    default void onMotionUpdate(EventMotionUpdate event){
     }
 
     /**
