@@ -1,6 +1,7 @@
 package today.opai.api.interfaces;
 
 import today.opai.api.dataset.RotationData;
+import today.opai.api.enums.EnumNotificationType;
 import today.opai.api.events.*;
 import today.opai.api.interfaces.modules.PresetModule;
 
@@ -23,6 +24,12 @@ public interface EventHandler {
      * Set rotation in this event via {@link today.opai.api.interfaces.managers.RotationManager#applyRotation(RotationData, int, boolean)}.
      */
     default void onPlayerUpdate() {
+    }
+
+    default void onRenderNameTags(EventRenderNameTag event){
+    }
+
+    default void onNotification(EnumNotificationType notificationType,String title,String content,long during){
     }
 
     default void onMotionUpdate(EventMotionUpdate event){

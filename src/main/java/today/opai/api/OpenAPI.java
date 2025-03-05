@@ -17,10 +17,7 @@ import today.opai.api.interfaces.managers.GameStateManager;
 import today.opai.api.interfaces.managers.ModuleManager;
 import today.opai.api.interfaces.managers.RotationManager;
 import today.opai.api.interfaces.managers.ValueManager;
-import today.opai.api.interfaces.render.FontUtil;
-import today.opai.api.interfaces.render.GLStateManager;
-import today.opai.api.interfaces.render.RenderUtil;
-import today.opai.api.interfaces.render.ShaderUtil;
+import today.opai.api.interfaces.render.*;
 
 /**
  * The OpenAPI interface provides methods for registering features, handling events,
@@ -75,6 +72,8 @@ public interface OpenAPI {
      * @param message the message to print
      */
     void printMessage(String message);
+
+    void printChatComponent(String json);
 
     void displayScreen(ExtensionScreen extensionScreen);
 
@@ -232,4 +231,6 @@ public interface OpenAPI {
     GLStateManager getGLStateManager();
 
     PacketUtil getPacketUtil();
+
+    ItemUtil getItemUtil();
 }
