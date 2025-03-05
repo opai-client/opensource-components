@@ -1,6 +1,8 @@
 package today.opai.api.interfaces.game.network.server;
 
-public interface SPacket2CEntitySpawn {
+import today.opai.api.interfaces.game.network.NetPacket;
+
+public interface SPacket2CEntitySpawn extends NetPacket {
     int getEntityId();
     int getX();
     int getY();

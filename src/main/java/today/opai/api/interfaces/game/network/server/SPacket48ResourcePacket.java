@@ -1,6 +1,8 @@
 package today.opai.api.interfaces.game.network.server;
 
-public interface SPacket48ResourcePacket {
+import today.opai.api.interfaces.game.network.NetPacket;
+
+public interface SPacket48ResourcePacket extends NetPacket {
     String getUrl();
     String getHash();
     void setUrl(String url);

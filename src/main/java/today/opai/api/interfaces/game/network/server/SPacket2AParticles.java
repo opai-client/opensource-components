@@ -1,8 +1,9 @@
 package today.opai.api.interfaces.game.network.server;
 
 import today.opai.api.dataset.Vec3Data;
+import today.opai.api.interfaces.game.network.NetPacket;
 
-public interface SPacket2AParticles {
+public interface SPacket2AParticles extends NetPacket {
     String getType();
     Vec3Data getPosition();
     Vec3Data getOffset();

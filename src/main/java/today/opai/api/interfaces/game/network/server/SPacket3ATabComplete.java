@@ -1,6 +1,8 @@
 package today.opai.api.interfaces.game.network.server;
 
-public interface SPacket3ATabComplete {
+import today.opai.api.interfaces.game.network.NetPacket;
+
+public interface SPacket3ATabComplete extends NetPacket {
     String[] getText();
     void setText(String[] text);
 }

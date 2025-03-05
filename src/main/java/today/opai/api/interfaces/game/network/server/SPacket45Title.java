@@ -1,6 +1,8 @@
 package today.opai.api.interfaces.game.network.server;
 
-public interface SPacket45Title {
+import today.opai.api.interfaces.game.network.NetPacket;
+
+public interface SPacket45Title extends NetPacket {
     String getType();
     String getMessage();
     int getFadeInTime();
