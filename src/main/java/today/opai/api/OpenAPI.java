@@ -11,7 +11,7 @@ import today.opai.api.interfaces.client.HypixelAPI;
 import today.opai.api.interfaces.client.IRC;
 import today.opai.api.interfaces.game.Options;
 import today.opai.api.interfaces.game.entity.LocalPlayer;
-import today.opai.api.interfaces.game.network.PacketUtils;
+import today.opai.api.interfaces.game.network.PacketUtil;
 import today.opai.api.interfaces.game.world.World;
 import today.opai.api.interfaces.managers.GameStateManager;
 import today.opai.api.interfaces.managers.ModuleManager;
@@ -226,5 +226,5 @@ public interface OpenAPI {
 
     GLStateManager getGLStateManager();
 
-    PacketUtils getPacketUtils();
+    PacketUtil getPacketUtils();
 }
