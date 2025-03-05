@@ -1,6 +1,8 @@
 package today.opai.api.interfaces.game.network.server;
 
-public interface SPacket06UpdateHealth {
+import today.opai.api.interfaces.game.network.NetPacket;
+
+public interface SPacket06UpdateHealth extends NetPacket {
     float getHealth();
     float getSaturation();
     int getFoodLevel();

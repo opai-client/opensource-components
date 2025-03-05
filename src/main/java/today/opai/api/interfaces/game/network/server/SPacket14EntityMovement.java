@@ -1,6 +1,8 @@
 package today.opai.api.interfaces.game.network.server;
 
-public interface SPacket14EntityMovement {
+import today.opai.api.interfaces.game.network.NetPacket;
+
+public interface SPacket14EntityMovement extends NetPacket {
     int getEntityId();
     double getX();
     double getY();
