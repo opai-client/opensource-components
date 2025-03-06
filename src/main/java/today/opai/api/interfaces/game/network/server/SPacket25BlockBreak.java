@@ -7,7 +7,4 @@ public interface SPacket25BlockBreak extends NetPacket {
     int getEntityId();
     Block getBlock();
     int getProgress();
-    void setEntityId(int entityId);
-    void setBlock(Block block);
-    void setProgress(int progress);
 }

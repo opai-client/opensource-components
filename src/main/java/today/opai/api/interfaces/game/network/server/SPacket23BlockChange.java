@@ -7,6 +7,4 @@ import today.opai.api.interfaces.game.world.Block;
 public interface SPacket23BlockChange extends NetPacket {
     Vec3Data getPosition();
     Block getBlock();
-    void setPosition(Vec3Data position);
-    void setBlock(Block block);
 }
