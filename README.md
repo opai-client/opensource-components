@@ -8,7 +8,7 @@ Example implementation: [example-extension](https://github.com/opai-client/examp
 
 Make your extension available for other players to download by publishing it on the [Opai Marketplace™](https://opai.today/marketplace.html). Please follow the steps below:
 
-1. **Join this Organization**: [Join the organization](https://api.cubk.us/github/join).
+1. **Join this Organization**: [Join the organization](https://api.opai.today/github/join).
 2. **Create a Public Repository**: Within the organization, create a new public repository for your extension.
 3. **Create a Release**: Navigate to your repository's releases section and create a new release.
 4. **Upload Your Extension**: Add your extension's JAR file as an asset in the release.
